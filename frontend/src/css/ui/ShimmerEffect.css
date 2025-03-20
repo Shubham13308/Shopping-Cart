@@ -1,0 +1,30 @@
+/* Add this to your Card.css or a new CSS file */
+.shimmer-wrapper {
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .shimmer {
+    animation: shimmer 1.5s infinite linear;
+    background: linear-gradient(to right, #f0f0f0 0%, #e0e0e0 20%, #f0f0f0 40%, #f0f0f0 100%);
+    background-size: 800px 104px;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  
+  @keyframes shimmer {
+    0% { transform: translateX(-100%); }
+    100% { transform: translateX(100%); }
+  }
+  
+  .shimmer-card {
+    width: 200px;
+    height: 250px;
+    margin: 15px;
+    background: #f0f0f0;
+    border-radius: 8px;
+  }
+  

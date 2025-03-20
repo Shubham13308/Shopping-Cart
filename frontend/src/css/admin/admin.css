@@ -1,0 +1,176 @@
+/* admin.css */
+
+/* Full-screen background image for the body */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); /* Replace with your image URL */
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #ecf0f1;
+}
+
+/* Container for the login form with backdrop filter */
+.admin-login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  backdrop-filter: blur(5px); /* Blurs the background behind the form */
+  background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background for contrast */
+  border-radius: 10px;
+}
+
+/* Styling for the login form */
+.admin-login-form {
+  background-color: #34495e;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+}
+
+/* Title styling */
+.form-title {
+  margin-bottom: 20px;
+  color: #ecf0f1;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+/* Error message styling */
+.error-message {
+  color: #e74c3c;
+  background-color: #f2dede;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
+}
+
+/* Form group styling */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+/* Input field styling */
+.form-input {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.form-input:focus {
+  outline: none;
+  border: 2px solid #2980b9;
+}
+
+/* Label styling */
+.form-label {
+  font-size: 14px;
+  color: #ecf0f1;
+  display: block;
+}
+
+/* Button styling */
+.login-button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2980b9;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.login-button:disabled {
+  background-color: #95a5a6;
+  cursor: not-allowed;
+}
+
+.login-button:hover:not(:disabled) {
+  background-color: #3498db;
+}
+
+
+.register-link {
+  margin-top: 15px;
+  color: #ecf0f1;
+}
+
+.register-link a {
+  color: #3498db;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
+.avatar-upload {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.upload-label {
+  font-size: 14px;
+  color: #666;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.avatar-placeholder {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  background-color: #ddd;
+  color: #999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.avatar-preview {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.avatar-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatar-img, .avatar-placeholder {
+  border: 2px solid #ccc;
+}
+
+
+
+/* Responsive styling for smaller screens */
+@media (max-width: 600px) {
+  .admin-login-form {
+      padding: 20px;
+  }
+}

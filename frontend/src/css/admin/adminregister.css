@@ -1,0 +1,132 @@
+/* admin.css */
+
+/* Full-screen background image for the body */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('https://images.unsplash.com/photo-1506748686214-e9df14d4d9d0'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #ecf0f1;
+}
+
+/* Shared container styling for both forms */
+.admin-login-container,
+.admin-register-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Shared form styling for both forms */
+.admin-login-form,
+.admin-register-form {
+    background-color: #34495e;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+.form-title {
+    margin-bottom: 20px;
+    color: #ecf0f1;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.error-message {
+    color: #e74c3c;
+    background-color: #f2dede;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 15px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-input {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form-input:focus {
+    outline: none;
+    border: 2px solid #2980b9;
+}
+
+.form-label {
+    font-size: 14px;
+    color: #ecf0f1;
+    display: block;
+}
+
+.register-button,
+.login-button {
+    width: 100%;
+    padding: 10px;
+    background-color: #2980b9;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.register-button:disabled,
+.login-button:disabled {
+    background-color: #95a5a6;
+    cursor: not-allowed;
+}
+
+.register-button:hover:not(:disabled),
+.login-button:hover:not(:disabled) {
+    background-color: #3498db;
+}
+
+.login-link,
+.register-link {
+    margin-top: 15px;
+    color: #ecf0f1;
+}
+
+.login-link a,
+.register-link a {
+    color: #3498db;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.login-link a:hover,
+.register-link a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .admin-login-form,
+    .admin-register-form {
+        padding: 20px;
+    }
+}

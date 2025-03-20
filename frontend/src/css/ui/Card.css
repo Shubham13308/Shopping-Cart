@@ -1,0 +1,179 @@
+/* Custom Card styles */
+.custom-card {
+  margin: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.custom-image {
+  width: 200px;
+  height: 200px;
+  object-fit: cover; /* Ensures the image is cropped to fit */
+}
+
+/* Quantity Controls */
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.quantity-controls button {
+  width: 30px;
+  height: 30px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.quantity-controls button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+.quantity-controls input {
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  height: 30px;
+}
+
+/* Add Stock Button */
+.order-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.order-button:disabled {
+  background-color: #cccccc;
+  cursor: not-allowed;
+}
+
+/* Default Button Styles */
+button {
+  padding: 8px 16px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+/* Primary Button */
+button.primary-btn {
+  background-color: #007bff;
+  color: white;
+}
+
+button.primary-btn:hover {
+  background-color: #0056b3;
+}
+
+/* Secondary Button */
+button.secondary-btn {
+  background-color: #6c757d;
+  color: white;
+}
+
+button.secondary-btn:hover {
+  background-color: #5a6268;
+}
+
+/* Danger Button */
+button.danger-btn {
+  background-color: #dc3545;
+  color: white;
+}
+
+button.danger-btn:hover {
+  background-color: #c82333;
+}
+
+/* Success Button */
+button.success-btn {
+  background-color: #28a745;
+  color: white;
+}
+
+button.success-btn:hover {
+  background-color: #218838;
+}
+
+/* Warning Button */
+button.warning-btn {
+  background-color: #ffc107;
+  color: black;
+}
+
+button.warning-btn:hover {
+  background-color: #e0a800;
+}
+
+/* Info Button */
+button.info-btn {
+  background-color: #17a2b8;
+  color: white;
+}
+
+button.info-btn:hover {
+  background-color: #138496;
+}
+
+/* Shimmer effect for loader */
+.shimmer-wrapper {
+  width: 100%;
+  height: 300px;
+  background-color: #f4f4f4;
+  border-radius: 8px;
+  position: relative;
+  overflow: hidden;
+}
+
+.shimmer-card {
+  background-color: #ddd;
+  height: 100%;
+  width: 100%;
+  animation: shimmer 1.5s infinite linear;
+  border-radius: 8px;
+}
+
+.shimmer {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 25%, rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0) 75%);
+  animation: shimmer 1.5s infinite linear;
+}
+
+@keyframes shimmer {
+  0% {
+    left: -100%;
+  }
+  100% {
+    left: 100%;
+  }
+}
+
+@media (min-width: 1200px) {
+  .custom-card {
+    /* No additional styles needed, handled by Bootstrap grid */
+  }
+}

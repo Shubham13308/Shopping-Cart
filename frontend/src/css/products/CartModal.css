@@ -1,0 +1,124 @@
+/* Modal Body Scrollable */
+.cart-modal .modal-body {
+    max-height: 400px;
+    overflow-y: auto; /* Ensures it becomes scrollable */
+  }
+  
+  /* Header Styles */
+  .cart-modal-header {
+    background-color: #f8f9fa;
+  }
+  
+  .cart-modal-title {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  /* Customer Name Style */
+  .customer-name {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #333;
+  }
+  
+  /* Cart Items List Styles */
+  .cart-items {
+    padding-left: 0;
+  }
+  
+  .cart-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  .cart-item:hover {
+    background-color: #f1f1f1;
+  }
+  
+  .cart-item-name {
+    font-weight: 500;
+  }
+  
+  .cart-item-price {
+    font-weight: 600;
+    color: #333;
+  }
+  
+  /* Redeem Points Section */
+  .redeem-points {
+    font-size: 1.1rem;
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .redeem-switch {
+    margin-left: 10px;
+  }
+  
+  /* Total Price Style */
+  .total-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 10px;
+    color: #333;
+  }
+  
+  /* Empty Cart Text Style */
+  .empty-cart {
+    font-size: 1rem;
+    color: #888;
+  }
+  
+  /* Footer Styles */
+  .cart-modal-footer {
+    padding: 10px;
+  }
+  
+  /* Button Customization */
+  .cart-modal-btn {
+    font-size: 1rem;
+    padding: 10px 20px;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .cart-modal .modal-body {
+      max-height: 300px;
+    }
+  
+    .customer-name {
+      font-size: 1rem;
+    }
+  
+    .total-price {
+      font-size: 1.1rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .cart-modal .modal-body {
+      max-height: 250px;
+    }
+  
+    .customer-name {
+      font-size: 0.9rem;
+    }
+  
+    .total-price {
+      font-size: 1rem;
+    }
+  
+    .cart-item {
+      font-size: 0.9rem;
+      padding: 8px;
+    }
+  }
+  

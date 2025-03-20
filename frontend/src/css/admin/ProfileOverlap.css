@@ -1,0 +1,54 @@
+/* General container for profile overlap */
+.profile-container {
+    display: flex; /* Use flexbox to display avatars side by side */
+    gap: 10px; /* Space between avatars */
+    overflow-x: auto; /* Allow horizontal scrolling if there are too many avatars */
+    align-items: center; /* Vertically align items */
+    justify-content: flex-start; /* Align avatars at the start of the container */
+    padding: 10px; /* Add padding around the container */
+  }
+  
+  .profile-avatar {
+    position: relative; /* Necessary for positioning the red dot */
+    display: inline-block; /* Ensure each avatar is inline */
+  }
+  
+  .avatar {
+    width: 50px; /* Avatar size */
+    height: 50px; /* Avatar size */
+    border-radius: 50%; /* Make the images circular */
+    object-fit: cover; /* Ensure the image fits properly */
+    border: 2px solid white; /* Optional: border for cleaner appearance */
+  }
+  
+  .red-dot {
+    position: absolute;
+    bottom: -8px;
+    left: 107%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: red; /* Red dot */
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  /* Style for the green dot (when token exists) */
+  .green-dot {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 10px;
+    height: 10px;
+    background-color: green; /* Green dot */
+    border-radius: 50%;
+    border: 2px solid white;
+  }
+  
+  /* Optional: Style the "No users available" message */
+  .no-users-message {
+    font-size: 1.2rem;
+    color: #888;
+  }
+  
